@@ -1,0 +1,21 @@
+import {Routes, Route} from 'react-router-dom'
+import CategoriesPreview from '../categories-preview/categories-preview.component';
+import Category from '../category/category.component';
+import TopcarDetail from '../topcar-detail/topcar-detail.component';
+
+import './shop.styles.scss'
+
+
+const Shop = () => {
+    
+    return (
+        <Routes>
+            <Route index element={<CategoriesPreview/>}/>
+            <Route path=":category" element={<Category/>}/>
+            <Route path="go/:topcar" element={<TopcarDetail/>}/>
+        </Routes>
+
+
+    )
+}
+export default Shop;  

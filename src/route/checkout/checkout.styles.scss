@@ -1,0 +1,24 @@
+.checkout-container {
+    width: 80%;
+    margin: auto;
+    .checkout-titles{
+
+        .titles-items{
+            margin: 15px 0px;
+            display: flex;
+            justify-content: space-between;
+            .titles-items-car{
+                width: 200px;
+            }
+        }
+        .checkout-titles-line{
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            margin-bottom: 10px;
+        }
+    }
+    .total{
+        font-size: 30px;
+    }
+}

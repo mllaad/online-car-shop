@@ -1,0 +1,44 @@
+.swiper-detail-container {
+    width: 100%;
+    height:100%;
+    display: flex;
+    .swiper-slide-img {
+        width: 60%;
+        height:500px;
+        object-fit: cover;
+    }
+    .swiper-slide-content{
+        width: 40%;
+        text-align: center;
+        color: white;
+        background-color: #222222;
+        font-family: 'Dancing Script', cursive;
+        .slide-content-title{
+            margin-top: 50px;
+            color: #3980c8;
+            font-size: 100px;
+            .slide-content-title-line{
+                height: 3px;
+                width: 50%;
+                margin: auto;
+                background-color: #2e2727;
+                border-top: #0e3964 solid 3px;
+                border-bottom: #364f67 solid 3px;
+            }
+        }
+        .slide-content-info{
+            width: 50%;
+            margin: auto;
+            margin-top: 60px;
+            border-radius: 3px;
+            padding: 10px;
+            background-color: #9BB7D4;
+            text-align: left;
+            p{
+                font-size: 20px;
+                color: #104e84;
+            }
+        }
+    }
+    
+}

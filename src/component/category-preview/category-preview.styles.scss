@@ -1,0 +1,28 @@
+.category-preview-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  
+    .category-preview-container-title {
+      width: 300px;
+      font-size: 30px;
+      margin-bottom: 25px;
+      text-decoration: none;
+      font-family: 'Staatliches', cursive;
+      text-align: center;
+      color: black; ;
+      margin: auto;
+      cursor: pointer;
+    }
+    .category-preview-container-subtitle{
+      font-size: 17px;
+      color: rgb(0, 0, 0);
+    }
+  
+    .preview {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 20px;
+    }
+  }
+  

@@ -1,0 +1,35 @@
+.category-title {
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+}
+.category-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 20px;
+}
+.comment-container-car{
+    font-family: 'Times New Roman', cursive;
+    font-size: 30px;
+}
+.comment-container-price{
+    padding: 10px 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.category-comment-container{
+    background-color: rgb(164, 185, 185);
+    // margin-top: 50px;
+    .category-comment{
+        font-family: 'sans-serif', cursive;
+        
+        // padding: 0 100px;
+    }
+    .comment-container-title{
+        font-size: 30px;
+        font-family: 'Dancing Script', cursive;
+        
+    }
+}

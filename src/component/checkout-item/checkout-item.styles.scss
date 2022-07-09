@@ -1,0 +1,27 @@
+.checkout-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    .checkout-items-img{
+        width: 200px;
+        height: 200px;
+    }
+    .checkout-items-quantitiy{
+        display: flex;
+        .arrow{
+            cursor: pointer;
+            font-size: 20px;
+            padding: 0px 10px;
+        }
+        .value{
+            font-size: 20px;
+
+        }
+    }
+    .remove-button{
+        width: 40px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}

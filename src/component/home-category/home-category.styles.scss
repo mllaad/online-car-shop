@@ -1,0 +1,45 @@
+.homecategory-container {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border: 1px solid;
+    box-shadow: 4px 4px 5px 1px rgb(3, 9, 39);
+    overflow: hidden;
+    &:hover {
+        .homecategory-img {
+            cursor: pointer;
+            opacity: 0.5;
+            transform: scale(1.3);
+            transition: transform 10s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+        .homecategory-detail{
+            cursor: pointer;
+        }
+    }
+    .homecategory-img {
+        width: 100%;
+        height: 100%;
+        background-size:cover;
+        background-position: center;
+    }
+    .homecategory-detail{
+        position: absolute;
+        transform: translate(100%, -130%);
+        height: 100px;
+        width: 100px;
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        z-index: 4;
+        background-color: #ffffff;
+        opacity: 0.6;
+        .homecategory-detail-p{
+            font-family: 'Staatliches';
+            font-size: 25px;
+            color: #000000;
+        }
+    }
+}   
