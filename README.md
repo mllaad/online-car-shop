@@ -1,2 +1,4 @@
 # online-car-shop
-react, style component, redux/toolkit
+react, redux/toolkit, sass, styled component
+miladghsemi :)
+

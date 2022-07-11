@@ -2,14 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    padding: 10px;
     .checkout-items-img{
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
     .checkout-items-quantitiy{
         display: flex;
-        .arrow{
+        .arrow-car{
             cursor: pointer;
             font-size: 20px;
             padding: 0px 10px;
@@ -24,4 +24,8 @@
         font-size: 20px;
         cursor: pointer;
     }
+}
+.checkout-items > * {
+    width: 100px !important;
+    text-align: center;
 }

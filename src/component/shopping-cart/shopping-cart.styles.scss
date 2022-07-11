@@ -5,12 +5,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    .modal{
+      position:absolute;
+      top: 100px;
+      right: 100px;
+      opacity: 0;
+      .modal-arrow{
+        width: 100px;
+        height: 100px;
+        transform: rotate(-45deg);
+      }
+    }
     .shopping-icon {
         width: 44px;
         height: 44px;
+        cursor: pointer;
       }
-    
       .item-count {
         position: absolute;
         top: 13px;
@@ -19,4 +29,35 @@
         font-weight: bold;
         bottom: 12px;
       }
+}
+.arrow {
+  animation: arrow 2s;
+}
+.shake { 
+  animation: shake 1s;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@keyframes arrow {
+  0% { 
+    transform: translate(-50px, 50px);
+    opacity: 1;
+  }
+  20% { transform: translate(50px, -50px) }
+  60% { transform: translate(-50px, 50px) }
+  100% { 
+    transform: translate(50px, -50px);
+    opacity: 0.7;
+  }
 }

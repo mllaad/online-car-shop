@@ -5,7 +5,6 @@ import TopcarDetail from '../topcar-detail/topcar-detail.component';
 
 import './shop.styles.scss'
 
-
 const Shop = () => {
     
     return (
@@ -14,8 +13,6 @@ const Shop = () => {
             <Route path=":category" element={<Category/>}/>
             <Route path="go/:topcar" element={<TopcarDetail/>}/>
         </Routes>
-
-
     )
 }
 export default Shop;  

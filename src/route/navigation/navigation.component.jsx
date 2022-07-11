@@ -7,11 +7,9 @@ import { ReactComponent as Carlogo } from '../../assets/carlogo.svg';
 import ShoppingCart from '../../component/shopping-cart/shopping-cart.component';
 import CartDropDown from '../../component/cart-dropdown/cart-dropdown.component';
 
-import {
-    NavigationSpace, 
+import { 
     NavigationContainer, 
     LogoContainer, 
-    LogoTitle,
     Logo,
     NavLinks,
     NavLink,
@@ -22,10 +20,8 @@ const Navigaiton = () => {
     const toggleCart = useSelector(state => state.cart.isCartOpen)
     return(
         <Fragment>
-            <NavigationSpace/> {/*bring back navigation height */}
             <NavigationContainer>
                 <LogoContainer to='/'>
-                    <LogoTitle>online car shop</LogoTitle>
                     <Logo><Carlogo/></Logo>               
                 </LogoContainer>
                 <NavLinks>
@@ -36,7 +32,7 @@ const Navigaiton = () => {
                         SHOP
                     </NavLink>
                     <NavLink to='/checkout'>
-                        CART
+                        CHECKOUT
                     </NavLink>
                     <ShoppingCart/>
                     {toggleCart && <CartDropDown/>}

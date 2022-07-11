@@ -1,18 +1,27 @@
 .category-preview-container {
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-  
+    flex-direction: column;    
     .category-preview-container-title {
-      width: 300px;
+      width: 90%;
       font-size: 30px;
-      margin-bottom: 25px;
       text-decoration: none;
+      padding: 10px 0px;
       font-family: 'Staatliches', cursive;
-      text-align: center;
       color: black; ;
       margin: auto;
       cursor: pointer;
+      text-align: center;
+      transition: 0.3s;
+      &:hover{
+        color:#7bad49;
+        background-color: rgb(3, 3, 2);
+        border-radius: 10px;
+        text-align: center;
+      }
     }
     .category-preview-container-subtitle{
       font-size: 17px;
@@ -20,6 +29,11 @@
     }
   
     .preview {
+      width: 90%;
+      margin: auto;
+      background-color: rgb(225, 223, 223);
+      border-radius: 5px;
+      padding: 5px 5px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 20px;

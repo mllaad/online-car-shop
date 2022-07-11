@@ -1,15 +1,17 @@
 .checkout-container {
-    width: 80%;
-    margin: auto;
-    .checkout-titles{
-
+    width: 70%;
+    padding: 30px 100px;
+    margin:100px auto;
+    border-radius: 6px;
+    background-color: rgb(234, 234, 234);
         .titles-items{
             margin: 15px 0px;
             display: flex;
             justify-content: space-between;
-            .titles-items-car{
-                width: 200px;
-            }
+        }
+        .titles-items > * {
+            width: 100px;
+            text-align: center;
         }
         .checkout-titles-line{
             width: 100%;
@@ -21,4 +23,3 @@
     .total{
         font-size: 30px;
     }
-}

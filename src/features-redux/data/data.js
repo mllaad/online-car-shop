@@ -5,15 +5,11 @@ const initialState = {
     productsCar : PRODUCTSJOSN.car,
     num : 1
 }
-
 const dataSlice = createSlice({
     name: 'data',
     initialState,
     reducers: {}
 })
-
-
-
 
 export default dataSlice.reducer
 

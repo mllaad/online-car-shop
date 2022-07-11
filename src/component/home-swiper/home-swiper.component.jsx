@@ -7,11 +7,13 @@ import { Navigation, EffectFade, } from "swiper";
 import 'swiper/css/navigation'
 import 'swiper/css/effect-fade'
 
-import './home-swiper.styles.scss'
-
 import SwiperDetail from './../../component/swiper-detail/swiper-detail.component'
 import Button from "../button/button.component";
+
 import { addcart } from '../../features-redux/cart/cart';
+
+import './home-swiper.styles.scss'
+
 const HomeSwiper = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()

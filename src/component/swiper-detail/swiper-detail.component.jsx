@@ -1,5 +1,4 @@
 
-
 import './swiper-detail.styles.scss'
 
 const SwiperDetail = ({product}) => {
@@ -10,8 +9,8 @@ const SwiperDetail = ({product}) => {
             <div className="swiper-slide-content">
                 <h1 className='slide-content-title'>
                     {product.title}
-                    <div className='slide-content-title-line'></div>
-                    </h1>
+                    <div className='slide-content-title-line'/>
+                </h1>
                 <div className="slide-content-info">
                     <p>Car Model : {CarModel}</p>
                     <p>Color : {Color}</p>
@@ -20,7 +19,6 @@ const SwiperDetail = ({product}) => {
                 </div>
                 <div className='swiper-detail-container-line'/>
             </div>  
-            
         </div>
     )
 }

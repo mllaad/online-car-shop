@@ -5,7 +5,6 @@ import PreviewCard from '../../component/preview-card/preview-card.component'
 
 import './category.styles.scss'
 
-
 const Category = () => {
     const productsCar = useSelector(state => state.data.productsCar)
     const { category } = useParams()
@@ -20,11 +19,11 @@ const Category = () => {
             {products.items.map((product, key)=>{
                 const carProdcuts = {
                     name: products.title,
-                    model: product.ModelYear,
+                    model: product.CarModel,
                     color: product.Color,
                     img: product.img,
                     price: product.Price,
-                    modelYear: product.ModelYearm,
+                    modelYear: product.ModelYear,
                     description: product.Description,
                     comment: product.comments
                 }
@@ -33,7 +32,7 @@ const Category = () => {
                 return(<Fragment key={key}>
                     <PreviewCard product={product} title={products.title}/>
                     <div className='category-comment-container'>
-                    <h2 className='comment-container-car'>{carProdcuts.model}{carProdcuts.modelYear}{carProdcuts.color}</h2>
+                    <h2 className='comment-container-car'>{carProdcuts.model} {carProdcuts.modelYear}  {carProdcuts.color}</h2>
                     <div className='comment-container-price'>Price:${carProdcuts.price}</div>
                     <div className='comment-container-title'>Comments:</div>
                     {carProdcuts.comment.map((comment, key) => {
