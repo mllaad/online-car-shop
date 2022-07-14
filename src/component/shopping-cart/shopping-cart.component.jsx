@@ -12,7 +12,7 @@ const ShoppingCart = () => {
         state.cart.cartItems.reduce((total, cartItem) => total + cartItem.quantity,0)
     ))
     return <div className='shopping-logo-container'>
-            <div className={`modal ${cartCount && 'arrow'} `}><ModalArrow className='modal-arrow'/></div>
+            <div className={`modal ${cartCount && 'arrow block'} `}><ModalArrow className='modal-arrow'/></div>
             <ShoppingLogo className={`shopping-icon ${cartCount && 'shake'}`}  onClick={()=>{dispatch(toggle())}}/>
             <span className='item-count'>{cartCount}</span>
            </div>
