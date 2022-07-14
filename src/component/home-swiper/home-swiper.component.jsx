@@ -1,6 +1,6 @@
 
-import { useSelector, useDispatch } from 'react-redux';
-import {useNavigate}  from 'react-router-dom'
+import { useSelector } from 'react-redux';
+
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import { Navigation, EffectFade, } from "swiper";
@@ -8,15 +8,10 @@ import 'swiper/css/navigation'
 import 'swiper/css/effect-fade'
 
 import SwiperDetail from './../../component/swiper-detail/swiper-detail.component'
-import Button from "../button/button.component";
-
-import { addcart } from '../../features-redux/cart/cart';
 
 import './home-swiper.styles.scss'
 
 const HomeSwiper = () => {
-    const navigate = useNavigate()
-    const dispatch = useDispatch()
     const productsCar = useSelector(state => state.data.productsCar)
     return (
         <div className="swiper">
@@ -28,22 +23,11 @@ const HomeSwiper = () => {
             loop
             className='swiper-field'
             >
-            {productsCar.map((product)=> {
-                const param = {
-                    name: product.title,
-                    model:product.items[2].CarModel,
-                }
-            return (
-                    <SwiperSlide key={product.id}>
-                    <div>
-                    <SwiperDetail product={product} />
-                        <div className="button-swiper-container">
-                            <Button onClick={()=>dispatch(addcart(product.items[2]))} buttonType='darkblueInvert'>buy now</Button>
-                            <Button onClick={()=>{navigate(`shop/go/${param.name}<&>${param.model}`)}} buttonType='darkblueInvert'>more detail</Button> 
-                        </div>
-                    </div>     
-                    </SwiperSlide> 
-                        )})}
+            {productsCar.map((product, key)=> ((
+                    <SwiperSlide key={key}>
+                        <SwiperDetail product={product}/>
+                    </SwiperSlide>     
+                     )))}
             </Swiper>
         </div>
     )

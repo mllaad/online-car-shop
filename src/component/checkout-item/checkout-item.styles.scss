@@ -1,12 +1,9 @@
 .checkout-items{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    .checkout-items-img{
-        width: 100px;
-        height: 100px;
-    }
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color: rgb(254, 254, 254);
+    border-radius: 2px;
+    padding: 5px;
     .checkout-items-quantitiy{
         display: flex;
         .arrow-car{
@@ -16,16 +13,71 @@
         }
         .value{
             font-size: 20px;
-
         }
     }
     .remove-button{
-        width: 40px;
         font-size: 20px;
         cursor: pointer;
     }
 }
 .checkout-items > * {
-    width: 100px !important;
-    text-align: center;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .checkout-items{
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 25px);
+        margin: 10px 0;
+        box-shadow: 2px 2px 10px 1px rgb(3, 9, 39);
+    }
+    .checkout-items-img {
+        grid-row: span 2;
+        grid-column: span 5;
+    }
+    .checkout-items-name {
+        grid-row: span 1;
+        grid-column: span 5;
+    }
+    .checkout-items-quantitiy {
+        grid-row: span 1;
+        grid-column: span 5;
+    }
+    .checkout-items-price {
+        grid-row: span 1;
+        grid-column: span 5;
+    }
+    .remove-button {
+        grid-row: span 1;
+        grid-column: span 5;
+    }
+  }
+  @media only screen and (max-width: 321px) {
+    .checkout-items{
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 25px);
+        margin: 10px 0;
+        box-shadow: 2px 2px 10px 1px rgb(3, 9, 39);
+    }
+    .checkout-items-img {
+        grid-row: span 2;
+        grid-column: span 10;
+    }
+    .checkout-items-name {
+        display: none;
+    }
+    .checkout-items-quantitiy {
+        grid-row: span 3;
+        grid-column: span 10;
+    }
+    .checkout-items-price {
+        display: none;
+    }
+    .remove-button {
+        grid-row: span 1;
+        grid-column: span 10;
+    }
+  }

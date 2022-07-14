@@ -16,6 +16,9 @@
       cursor: pointer;
       text-align: center;
       transition: 0.3s;
+      color: rgb(255, 255, 255);
+      background-color: #7bad49;
+      border-radius: 5px;
       &:hover{
         color:#7bad49;
         background-color: rgb(3, 3, 2);
@@ -34,9 +37,9 @@
       background-color: rgb(225, 223, 223);
       border-radius: 5px;
       padding: 5px 5px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      column-gap: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
   }
   

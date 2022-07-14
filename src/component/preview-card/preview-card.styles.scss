@@ -1,11 +1,13 @@
 .product-card-container {
+    width: 200px;
+    height:300px;
+    margin: 5px auto;
     background-color: rgb(255, 255, 255)  ;
     box-shadow: 4px 4px 20px 1px rgb(3, 9, 39);
     border-radius: 5px;
     padding: 6px;
     display: flex;
     flex-direction: column;
-    height: 300px;
     align-items: center;
     position: relative;
   
@@ -21,7 +23,7 @@
       width: 100%;
       margin: auto;
       opacity: 0.7;
-      display: none;
+      display: flex;
     }
   
     &:hover {
@@ -32,7 +34,7 @@
       button {
         opacity: 0.85;
         display: flex;
-        margin-top: 15px;
+        margin: auto;
       }
     }
   
@@ -62,5 +64,3 @@
       }
     }
   }
-  
-  

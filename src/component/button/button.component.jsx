@@ -6,9 +6,9 @@ const BUTTON_TYPE_CLASSES = {
     darkblueInvert: 'darkblue-invert',
 }
 
-const Button = ({buttonType, ...otherProps}) => {
-    return(
-        <button className={`button-container ${BUTTON_TYPE_CLASSES[buttonType]}`}{...otherProps}></button>
-    )
-}
+const Button = ({buttonType, className, ...otherProps}) => (
+    (
+    <button className={`${className} button-container ${BUTTON_TYPE_CLASSES[buttonType]} `}{...otherProps}></button>
+    ))
+
 export default Button;
