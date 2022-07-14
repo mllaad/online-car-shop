@@ -11,8 +11,8 @@
       right: 100px;
       opacity: 0;
       .modal-arrow{
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
         transform: rotate(-45deg);
       }
     }
@@ -25,7 +25,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-30%,10%);
+        transform: translate(-70%,-100%);
         font-size: 10px;
         font-weight: bold;
         bottom: 12px;
@@ -69,12 +69,15 @@
       height: 30px;
       cursor: pointer;
     }
+    .modal-arrow{
+      width: 50px !important;
+      height: 50px !important;
+      transform: rotate(-45deg);
+    }
     .item-count {
-      position: absolute;
-      top: 14px !important;
-      left: 18px !important;
+      transform: translate(-70%,-70%) !important;
       font-size: 8px !important;
       font-weight: bold;
-      bottom: 12px;
+      // bottom: 12px;  
     }
 }
