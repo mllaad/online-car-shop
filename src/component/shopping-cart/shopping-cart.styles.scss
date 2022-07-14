@@ -11,8 +11,8 @@
       right: 100px;
       opacity: 0;
       .modal-arrow{
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         transform: rotate(-45deg);
       }
     }
@@ -23,8 +23,9 @@
       }
       .item-count {
         position: absolute;
-        top: 13px;
-        left: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30%,10%);
         font-size: 10px;
         font-weight: bold;
         bottom: 12px;
@@ -37,7 +38,7 @@
   animation: shake 1s;
 }
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
+  0% { transform: translate(1px, 1px) rotate(0deg);}
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
   20% { transform: translate(-3px, 0px) rotate(1deg); }
   30% { transform: translate(3px, 2px) rotate(0deg); }
