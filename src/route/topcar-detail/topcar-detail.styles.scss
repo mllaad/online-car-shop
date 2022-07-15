@@ -1,8 +1,8 @@
 .topcar-detail-container{
         box-shadow: 4px 4px 20px 1px rgb(3, 9, 39);
         width: 70%;
-        padding: 1px 0px;
-        margin: auto;
+        padding: 1px 4px;
+        margin: 100px auto;
         text-align: center;
         border-radius: 8px;
         background-color: #dbdbdb;
@@ -89,8 +89,8 @@
 
 @media only screen and (max-width: 1000px) {
     .topcar-detail-container {
+        margin: 30px auto;
         width: 90%;
-        margin: auto !important;
     }   
     .topcar-dettail-container2 {
         width: 70% !important;

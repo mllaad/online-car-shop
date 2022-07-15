@@ -1,6 +1,8 @@
 .category-container {
     width: 70%;
     margin: auto;
+    margin-bottom: 100px;
+    padding-bottom: 40px !important;
     .category-title {
         font-family: 'Dancing Script', cursive;
         text-transform: uppercase;
@@ -9,7 +11,7 @@
         margin-top: 100px;
     }  
     .category-card-container {
-        padding: 50px 50px;
+        padding: 20px 40px;
         background-color: rgb(239, 239, 239);
         box-shadow: 0px 4px 10px 1px rgb(3, 9, 39);
         border-radius: 10px;
@@ -47,8 +49,9 @@
 
 @media only screen and (max-width: 830px) {
     .category-container {
-        width: 95%;
+        width: 90%;
         margin: auto;
+        padding: 0 0px;
         .category-title {
             font-size: 50px;
         }
@@ -57,6 +60,7 @@
 }
 @media only screen and (max-width: 600px) {
     .category-container {
+        width: 90%;
         .category-title {
             font-size: 30px;
         }
@@ -66,5 +70,10 @@
             display: grid;
             grid-template-columns: repeat(1, auto);
         }
+    }
+    .category-comment-container {
+        max-width: 200px;
+        padding: 0px 10px;
+        margin: auto;
     }
 }

@@ -1,6 +1,6 @@
 .checkout-container {
     width: 70%;
-    padding: 30px 100px;
+    padding: 30px 50px;
     margin:100px auto;
     border-radius: 6px;
     background-color: rgb(234, 234, 234);
@@ -21,7 +21,7 @@
         }
     }
     .total{
-        font-size: 30px;
+        font-size: 20px;
     }
 
 
@@ -31,5 +31,8 @@
         .titles-items > * {
             display: none;
         }
+    }
+    .total{
+        font-size: 15px;
     }
     }

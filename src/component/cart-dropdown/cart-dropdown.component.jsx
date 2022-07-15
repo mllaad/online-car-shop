@@ -1,15 +1,33 @@
-import {useSelector} from 'react-redux'
+import { useEffect, useRef } from 'react'
+import {useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
 import Button from '../button/button.component'
+import { toggle } from '../../features-redux/cart/cart'
 
 import './cart-dropdown.styles.scss'
 
-const CartDropDown = () => {
+const CartDropDown = ({logoEl}) => {
+
     const cartItems = useSelector(state => state.cart.cartItems)
+    const toggleCart = useSelector(state => state.cart.isCartOpen)
     const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const dropdownEl = useRef()
+    
+    const handleClickOutside = (event) => {
+        const domEl = logoEl.current.contains(event.target) || dropdownEl.current.contains(event.target)
+        if (toggleCart && !domEl) {
+            return dispatch(toggle())
+        }
+    }
+        useEffect(()=> {
+        document.addEventListener("mousedown", handleClickOutside)
+        return () => document.removeEventListener("mousedown", handleClickOutside)
+    },[toggleCart])
+    
 return (
-    <div className='cart-dropdown-container'>
+    <div ref={dropdownEl} className={`cart-dropdown-container ${toggleCart && 'togglecart'}`}>
         <div className='cart-items'>
         {cartItems.map((item, key)=> {
             const {CarModel, Price, ModleYear, img, quantity} = item

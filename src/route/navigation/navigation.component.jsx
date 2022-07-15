@@ -5,7 +5,6 @@ import {Outlet} from 'react-router-dom'
 import { ReactComponent as Carlogo } from '../../assets/carlogo.svg';
 
 import ShoppingCart from '../../component/shopping-cart/shopping-cart.component';
-import CartDropDown from '../../component/cart-dropdown/cart-dropdown.component';
 
 import { 
     NavigationContainer, 
@@ -35,7 +34,6 @@ const Navigaiton = () => {
                         CHECKOUT
                     </NavLink>
                     <ShoppingCart/>
-                    {toggleCart && <CartDropDown/>}
                 </NavLinks>
             </NavigationContainer>
             <Outlet/>
