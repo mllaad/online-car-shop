@@ -57,26 +57,28 @@ margin-right:10px;
 `
 
 export const NavLink = styled(Link)`
-text-decoration: none;
-text-transform: uppercase;
-padding: 10px;
-margin-right: 40px;
-font-size: 20px; 
-@media ${devices.tablet} {
-  margin-right:0px;
-  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-right: 40px;
+  font-size: 20px;
+  color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  @media ${devices.tablet} {
+    margin-right: 0px;
+    font-size: 15px;
   }
-@media ${devices.mobileS} {
-  margin-right:0px;
-  font-size: 10px;
+  @media ${devices.mobileS} {
+    margin-right: 0px;
+    font-size: 10px;
   }
-&:hover,
+  &:hover,
   &:focus {
     border-radius: 4px;
-    background-color:#7bad49;
-    color: white;
+    background-color: #478f00;
+    color: #7fe01f;
   }
   &:active {
-    color: white;
+    color: #7fe01f;
   }
-`
+`;
